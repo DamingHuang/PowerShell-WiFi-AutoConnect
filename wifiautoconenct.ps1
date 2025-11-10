@@ -1,10 +1,10 @@
 ﻿# Add XML profiles
 $wifiProfiles= @(
-    "C:\Users\Commo\Desktop\script\PowerShell\GuestOpenNet.xml",
-    "C:\Users\Commo\Desktop\script\PowerShell\notwork.xml",
-    "C:\Users\Commo\Desktop\script\PowerShell\TestWiFi_A.xml",
-    "C:\Users\Commo\Desktop\script\PowerShell\Wi-Fi-QWGX3-1st.xml",
-    "C:\Users\Commo\Desktop\script\PowerShell\Wi-Fi-QWGX3.xml"
+    "C:\Users\User1\Desktop\script\PowerShell\GuestOpenNet.xml",
+    "C:\Users\User1\Desktop\script\PowerShell\notwork.xml",
+    "C:\Users\User1\Desktop\script\PowerShell\TestWiFi_A.xml",
+    "C:\Users\User1\Desktop\script\PowerShell\Wi-Fi-home-1st.xml",
+    "C:\Users\User1\Desktop\script\PowerShell\Wi-Fi-home.xml"
 )
 
 foreach ($wifiProfile in $wifiProfiles) {
@@ -13,7 +13,7 @@ foreach ($wifiProfile in $wifiProfiles) {
 }
 
 # Connect to Wi-Fi
-$wifiList=@("GuestOpenNet","notwork","TestWiFi_A","QWGX3-1st","QWGX3")
+$wifiList=@("GuestOpenNet","notwork","TestWiFi_A","home-1st","home")
 
 foreach ($wifi in $wifiList) {
     Write-Host "Trying to connect to $wifi..."
@@ -38,3 +38,4 @@ else {
 
 
 }
+
